@@ -1,11 +1,12 @@
 # debug
-
+  
   tiny node.js debugging utility modelled after node core's debugging technique.
-
+  Exactly the same as [https://github.com/visionmedia/debug](https://github.com/visionmedia/debug), except it doesnt print the date ever.
+  
 ## Installation
 
 ```bash
-$ npm install debug
+$ npm install debug-nodate
 ```
 
 ## Usage
@@ -15,7 +16,7 @@ $ npm install debug
 Example _app.js_:
 
 ```js
-var debug = require('debug')('http')
+var debug = require('debug-nodate')('http')
   , http = require('http')
   , name = 'My App';
 
@@ -38,7 +39,7 @@ require('./worker');
 Example _worker.js_:
 
 ```js
-var debug = require('debug')('worker');
+var debug = require('debug-nodate')('worker');
 
 setInterval(function(){
   debug('doing some work');
@@ -128,7 +129,7 @@ You can set an alternative logging method per-namespace by overriding the `log` 
 Example _stdout.js_:
 
 ```js
-var debug = require('debug');
+var debug = require('debug-nodate');
 var error = debug('app:error');
 
 // by default stderr is used
