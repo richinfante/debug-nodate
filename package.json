@@ -1,11 +1,11 @@
 {
-  "name": "debug",
+  "name": "debug-nodate",
   "version": "2.2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/visionmedia/debug.git"
+    "url": "git://github.com/richinfante/debug-nodate.git"
   },
-  "description": "small debugging utility",
+  "description": "small debugging utility, forked from git://github.com/visionmedia/debug.git",
   "keywords": [
     "debug",
     "log",
